@@ -1,0 +1,392 @@
+
+:root{
+    --dark-green: #5E6307;
+    --light-green: #aec620;
+    --grey: #b1b7a8;
+    --text-color: #f8f8f8;
+    --red: #d61c00;
+    --dark-red: #b70000;
+}
+*{
+  padding: 0;
+  margin: 0;
+  
+
+}
+body{
+  background: linear-gradient(180deg, #C6DF30 0%, #5E6307 100%);
+    height: 100%;  
+}
+header{
+   background-color: var(--dark-green);
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-content: center;
+   justify-content: space-around;
+   align-items: center;
+   
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "Ingrid Darling", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: var(--text-color);
+}
+.logo svg{
+    width: 70px;
+
+}
+.menu,a{
+    font-family: "Underdog", system-ui;
+    font-size: 21px;
+text-decoration: none;
+color: var(--text-color);
+transition: color 0.2s ease ;
+
+}
+.menu a:hover{
+    color: var(--dark-green);
+    
+}
+.btn{
+ background: linear-gradient(90deg, #B70000 0%, #D61C00 100%);
+ border: none;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ font-family: "Marck Script", cursive;
+ font-weight: 400;
+ font-style: normal;
+ color: var(--text-color);
+ border-radius: 10px;
+ padding: 10px 20px;
+ transition: all 0.2s ease ;
+}
+.btn:hover{
+    cursor: pointer;
+   background: linear-gradient(270deg, #B70000 0%, #D61C00 100%); 
+   transform: translateY(-5px);
+   box-shadow: 0 5px 7px rgba(0,0, 0, 0.5);
+   
+}
+.btn-login{
+    font-size: 20px;
+    
+}
+.hero{
+    min-height:75vh ;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(198, 223, 48, 0.82) 100%), url(BG.png);
+    width: 100%;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+
+}
+.btn-hero{
+    margin-bottom: 80px;
+    font-size: 50px;
+
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+gap: 20px;
+margin: 20px 0;
+
+}
+.card{
+    background-color: var(--light-green);
+    display: grid;
+    grid-template-rows: 2fr 1fr ;
+    justify-items: center;
+    align-items: center;
+    width: 270px;
+    padding: 20px 7px 7px ;
+    box-shadow: 0 12px 12px rgba(0,0, 0, 0.25);
+    transition: all 0.2s ease;
+
+}
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 20px 12px rgba(0,0, 0, 0.25);
+    background: #bbd23b;
+
+}
+.card p{
+    font-family: "Underdog", system-ui;
+    font-size: 25px;
+    text-align: center;
+    color: var(--text-color);
+    
+}
+.card-img{
+    height: 200px;
+    
+}
+.info{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    color: var(--text-color);
+    font-family: "Underdog", system-ui;
+    min-height: 300px;
+    margin: 35px 67px;
+    gap: 15px;
+
+}
+.info form{
+    display: flex;
+flex-direction: column;
+align-items: stretch;
+justify-content: space-around;
+padding: 10px 30px;
+background:var(--dark-green);
+box-shadow: 0 12px 20px rgba(0,0, 0, 0.25);
+}
+.info form h2{
+    text-align: center;
+}
+.input-group{
+    display: flex;
+    gap: 10px;
+    
+}
+input{
+    background: var(--text-color);
+    border: none;
+    border-radius: 25px;
+padding: 12px;
+font-family: "Underdog", system-ui;
+font-size: 18px;
+color: #555;
+box-sizing: border-box;
+width: 100%;
+}
+input::placeholder{
+    font-family: "Underdog", system-ui;
+    color: var(--grey);
+    font-size: 15px;
+
+}
+input:focus{
+    outline: none;
+    border: 1px solid var(--light-green);
+    filter: drop-shadow(0 0 10px var(--light-green));
+}
+.btn-form{
+    font-size: 25px;
+}
+.btn:active{
+    transform: translateY(5px);
+    box-shadow: inset 0 5px 2px rgba(0,0, 0, 0.25);
+}
+.schedule-container{
+    padding: 20px;
+    background-color: var(--text-color);
+    box-shadow: 0 12px 20px rgba(0,0, 0, 0.25);
+    color: var(--dark-green);
+    
+}
+.schedule-container h3{
+    text-align: center;
+
+}
+.schedule-container ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+li{
+    margin-top: 4px;
+    
+}
+li:hover{
+    color: var(--red);
+}
+
+
+footer{
+background: var(--dark-red);
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 20px;
+}
+footer p{
+    font-family: "Underdog", system-ui;
+    font-size: 25px;
+    color: var(--text-color);
+}
+footer svg{
+    width: 56px;
+    margin-left: 10px;
+}
+svg{
+    transition: transform 0.3s, fill 0.3s ease;
+    overflow: visible;
+}
+svg:hover *{
+    fill: var(--grey);
+    animation: sway 0.5s ease-in-out infinite;
+    transform-origin: top center; 
+}
+
+/* --- Анімація --- */
+.gallery-wrapper {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+}
+.cards-container {
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: flex-start;
+    gap: 40px;
+    padding-right: 20px;
+    animation: marquee 20s linear infinite;
+}
+
+.gallery-wrapper:hover .cards-container {
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-25%); }
+}
+.card {
+    flex-shrink: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+@keyframes sway {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }    
+    75% { transform: rotate(-5deg); }   
+    100% { transform: rotate(0deg); }
+}
+
+ .login-hero{
+    min-height: 85vh;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(198, 223, 48, 0.3) 100%), url(BG.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .login-card{
+    background: rgba(255,255, 255, 0.25);
+    backdrop-filter: blur(
+        12px
+    );
+    border-radius: 30px;
+    padding: 30px 50px;
+    margin: 20px 0;
+    width: 380px;
+    box-shadow: 0 8px 32px 0 rgba(0,0, 0, 0.2);
+    border: 1px solid rgba(255,255, 255, 0.4);
+ }
+ .login-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+ }
+ .login-input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+ .login-input-group label{
+    font-family: "Underdog", system-ui;
+    font-size: 18px;
+    color: var(--dark-green);
+    padding-left: 10px;
+
+ }
+ .btn-sumbit{
+    font-size: 38px;
+    margin-top: 10px;
+
+ }
+ .register-link{
+    font-family: "Marck Script", cursive;
+    font-size: 22px;
+    color: var(--dark-green);
+    text-align: center;
+    transition: color 0.2s ease;
+
+ }
+ .register-link:hover{
+    color: var(--red);
+    transform: scale(1.2);
+ }
+ @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        padding: 20px;
+        text-align: center;
+    }
+    .menu *{
+        font-size: 38px;
+    }
+    .btn{
+        font-size: 30px;
+    }
+    .hero{
+        min-height: 40vh;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    form{
+        gap: 20px;
+        font-size: 30px;
+        margin: 0 -50px;
+        padding: 4px;
+    }
+    .login-card{
+        width: 100%;
+        margin: 0 20px;
+    }
+    input{
+        padding: 15px;
+    }
+    input::placeholder{
+        font-size: 18px;
+    }
+    .input-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .schedule-container{
+        font-size: 30px;
+    }
+    footer {
+        flex-direction: column;
+        padding: 20px;
+    }
+    footer svg{
+        width: 80px;
+        margin: 0 15px;
+    }
